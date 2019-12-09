@@ -30,6 +30,9 @@ function variavel(){
 	$(".imgAparelho").width($(".imgAparelho").height());
 	$(".go").height($(window).height()-$("#exemplo4 .bannerTitle").height());
 	$(".go").css("background-size",$(".go").height()*0.8);
+	for(var i=0;i<$(".costas").length;i++){
+		$(".carta").eq(i).height($(".textCosta").eq(i).height()+$(".titleCosta").eq(i).height());
+	}
 }
 // is scroll
 function ifScroll(){
