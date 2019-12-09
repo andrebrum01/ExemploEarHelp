@@ -406,7 +406,7 @@ div .prop span{
 }
 .galeryAparelho{
 	height: 100%;
-	width: 100%;
+	width: 95%;
 	display: grid;
 	align-items: center;
 	grid-template-columns:repeat(3, 1fr);

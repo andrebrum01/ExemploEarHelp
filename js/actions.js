@@ -13,6 +13,7 @@ function variavel(){
 	$(".imgTipoPerda").height($(".imgTipoPerda").width()*(546/939));
 	$(".banner1").height($(".banner1").width()*(1117/4000));
 	$(".boxCarta").height($(".boxCarta").width());
+	$(".boxAparelho").height($(".boxAparelho").width());
 	var hFirst = $(".first").height();
 	$(".opacity").height(hFirst);
 	$(".text").height(hFirst);
@@ -25,6 +26,7 @@ function variavel(){
 	$(".bannerTitle").css("margin-bottom",($(".caixaNavbar").height()/2)+15);
 	$(".faixa").height($(".bannerTitle").height()-$(".bannerSombraTop").height()-$(".bannerSombraBot").height());
 	$(".faixa").css("margin-top",(($(".bannerTitle").height()/2)-($(".faixa").height()/2))+parseInt($(".bannerTitle").css("marginTop")));
+
 }
 // is scroll
 function ifScroll(){
@@ -49,7 +51,7 @@ function ifScroll(){
 $(window).resize(function() {
 	variavel();
 });
-
+// --------------maquina--de--escrever------------------
 // palavras de incentivo
 var palavras=['amor','solidariedade','saúde','bem-estar','futuro','alegria','acessibilidade','pessoas'];
 var num,gerador;
