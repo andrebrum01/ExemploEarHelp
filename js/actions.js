@@ -12,7 +12,7 @@ function variavel(){
 	$(".imgTipoPerda").width($(window).width()*0.6);
 	$(".imgTipoPerda").height($(".imgTipoPerda").width()*(546/939));
 	$(".banner1").height($(".banner1").width()*(1117/4000));
-	$(".boxCarta").height($(".boxCarta").width());
+	$(".boxCarta").css("min-height",$(".boxCarta").width());
 	$(".boxAparelho").css("min-height",$(".boxAparelho").width());
 	var hFirst = $(".first").height();
 	$(".opacity").height(hFirst);
