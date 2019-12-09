@@ -338,9 +338,10 @@ div .prop span{
  	transform: rotateY(180deg);
  	backface-visibility: hidden;
  	font-size: 4vh;
- 	display: flex;
-	flex-direction: column;
-	align-items: center;
+ 	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+	justify-items:center;
 
 }
 /*cada uma dos decibeis*/
@@ -498,8 +499,8 @@ div .prop span{
 /*---------------responsvidade--------------*/
 @media only screen and (max-width: 800px){
 	.tiposDePerdas{
-	 grid-template-rows: 1fr 1fr 1fr;
-	 grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 	.perda{
 		padding-left: 20%;
