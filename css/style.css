@@ -1,0 +1,436 @@
+body,html{
+	margin: 0px auto;
+	padding: 0px auto;
+	font-size: 3vh;
+	font-family: "Source Sans Pro", Arial, sans-serif;
+	width: 100%;
+    height:100%;
+    scroll-behavior: smooth;
+    background-color: var(--backInput);
+}
+html{
+	overflow-x: hidden;
+}
+::selection {
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+/* keyframes*/
+@keyframes piscar{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+/* declarando variaveis*/
+:root{
+	--backblue:#00121e;
+	--borderInput:#3b8cc6;
+	--backInput:#082336;
+	--azuladao:#3de6af;
+}
+/*configs dos sections*/
+.first{
+	height: 95%;
+	width: 100%;
+	background-color: var(--backInput);
+	background-image: url(../img/orelhas.jpg);
+	/*background-attachment: fixed;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.coisas{
+	min-height: 100%;
+	width: 100%;
+	background-color: var(--backInput);
+}
+/*--------------navigation---bar----------------*/
+.caixaNavbar{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar{
+	min-height: 50px;
+	width: 80%;
+	color: white;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns:1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	justify-items:center;
+	text-align: center;
+	height: 8%;
+	z-index: 3;
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.8);
+}
+/*links dos nav bar*/
+.navbar a{
+	background-color: #0073ff;
+	height: 100%;
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+ 	text-transform: uppercase;
+ 	transition: 0.3s ease;
+}
+.navbar a:hover{
+	border-color: #0073ff;
+	border-width: 2px;
+	border-style: solid;
+	color: #0073ff;
+	background-color: white;
+}
+/* on fixed navbar*/
+.fixed{
+	position: fixed;
+	top: 0px;
+}
+/*----------------fazendo banner title-------------*/
+.bannerTitle{
+	z-index: 1;
+	transform: skewX(-20deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bannerSombraTop{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30%;
+	width: 100%;
+	background-color: #586f8d;
+}
+.bannerSombraBot{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 30%;
+	width: 100%;
+	background-color: #586f8d;
+}
+.faixa{
+	position: absolute;
+	width: 100%;
+	background-color: #b2cbc3;
+	z-index: 0;
+}
+.caixaBanner{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #9dadc2;
+}
+.titleBanner{
+	transform: skewX(20deg);
+	font-size: 4vh;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: rgba(0,0,0,0.6);
+	margin: 30px;
+}
+/*--------------First---Section--------------------*/
+/*opacidade do first section*/
+.opacity{
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	background: linear-gradient(35deg,var(--backInput),#052a47);
+	opacity: .6;
+}
+/* os bagaças visiveis*/
+.text{
+	position: relative;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	color: white;
+	align-items: center;
+	justify-items: center;
+}
+.active{
+	box-shadow: inset 0px -5px white;
+}
+/* fznd logo section first*/
+div .logo{
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/earhelp.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+}
+div .prop{
+	text-align: center;
+	font-size: 5vh;
+	width: 80%;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0px 0px 1.5px black;
+}
+div .prop span{
+	margin-right: 5px;
+}
+.cursor{
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 100%;
+	animation: piscar 0.7s ease infinite;
+}
+.palavras{
+	margin-left: 5px;
+	color: var(--azuladao);
+}
+/*---------Tipos--de---Perdas-------------------*/
+/*exemplo 1*/
+#exemplo1{
+	height: auto;
+	min-height:100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*img do exemplo1*/
+.imgTipoPerda{
+	background-image: url(../img/ouvido.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color: rgba(255,255,255);
+	z-index: 1;
+	margin-bottom: 15px;
+}
+/*title de tipo de perda*/
+.titleExemplo1{
+	width: 100%;
+	color: var(--backblue);
+	text-align: center;
+	font-weight: bold;
+	font-size: 4vh;
+	text-transform: uppercase;
+	padding: 3%;
+}
+/*tipos de perdas*/
+.tiposDePerdas{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 15px;
+}
+/*caixa de perdas*/
+.perda{
+	text-align: justify;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+	background-color: white;
+}
+.perda:hover{
+	background-color:RoyalBlue;
+	color: white;
+}
+/*title tipo perda*/
+.titlePerda{
+	color: var(--backInput);
+	text-align: center;
+	font-weight: bold;
+	font-size: 4vh;
+}
+.perda:hover .titlePerda{
+	color: white;
+}
+.textoPerda{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*-----Niveis--de--perdas---auditivas--------------*/
+#exemplo2{
+	background-color: var(--backInput);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;	
+}
+/* parte das freq*/
+.titleExemplo2{
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 4vh;
+	text-transform: uppercase;
+	padding: 3%;
+}
+/*criando as galerias*/
+.galeryFreq{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-columns:repeat(3, 1fr);
+	grid-gap: 15px;
+}
+.boxCarta{
+ width: 100%;
+ height: 100%;
+}
+/*carta*/
+.carta{
+	transform-style: preserve-3d;
+ 	transition: all 0.5s linear;
+ 	height: 100%;
+	width: 100%;
+	color: white;
+
+}
+#boxCarta:hover .carta{
+	transform: rotateY(180deg);
+	color: var(--backblue);
+}
+.frente {
+	position: absolute;
+	background-color: var(--backblue);
+	height:100%;
+	width: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 4vh;
+	font-weight: bold;
+}
+.costas{
+	position: absolute;
+	background-color: white;
+	border-color: var(--backblue);
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0px 0px 5px black;
+	height:100% ;
+	width: 100%;
+ 	transform: rotateY(180deg);
+ 	backface-visibility: hidden;
+ 	font-size: 4vh;
+ 	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+/*cada uma dos decibeis*/
+.titleFrente{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.imgFrente{
+	height: 90%;
+	width: 100%;
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bird{
+	background-image: url(../img/bird.png);
+}
+.talk{
+	background-image: url(../img/talk.png);
+}
+.aspirador{
+	background-image: url(../img/aspirador.png);
+}
+.dj{
+	background-image: url(../img/dj.png);
+}
+.aviao{
+	background-image: url(../img/aviao.png);
+}
+.titleCosta{
+	position: relative;
+	top: 0;
+	font-size: 4vh;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.textCosta{
+	height: 100%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+}
+/*------------banner---Surdo---------------------*/
+.banner1{
+	margin-top: 15px;
+	width: 100%;
+	background-image: url(../img/bannerSurdo.png);
+	background-size: contain;
+}	
+
+/*---------------exemplo3------------------*/
+#exemplo3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+}
+.galeryAparelho{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-columns:repeat(3, 1fr);
+	grid-gap: 15px;
+}
+.boxAparelho{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+/*---------------responsvidade--------------*/
+@media only screen and (max-width: 800px){
+.tiposDePerdas{
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-template-columns: 1fr;
+}
+.perda{
+	padding-left: 20%;
+	padding-right: 20%;
+	box-shadow: 0px 0px 0px;
+}
+.galeryFreq{
+	grid-template-columns:1fr;
+	width: 80%;
+}
+}
