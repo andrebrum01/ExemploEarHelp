@@ -374,8 +374,6 @@ div .prop span{
 	background-image: url(../img/aviao.png);
 }
 .titleCosta{
-	position: relative;
-	top: 0;
 	font-size: 4vh;
 	width: 100%;
 	text-align: center;
