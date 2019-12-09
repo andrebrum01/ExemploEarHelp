@@ -18,7 +18,6 @@ function variavel(){
 	$(".opacity").height(hFirst);
 	$(".opacityBack").height($("#exemplo4").height());
 	$(".text").height(hFirst);
-	$(".navbar").height($(".navbar a").height());
 	var tangente = Math.tan(20);
 	var espaco = $(".bannerSombraTop").height()/tangente;
 	$(".bannerSombraTop").css("transform","translateX("+espaco+"px) skewX(40deg)");
@@ -43,7 +42,12 @@ function ifScroll(){
 	}
 	for(var i=1;i<$("section").size();i++){
 		if ($(document).scrollTop()+10>=$("section").eq(i).offset().top && $(document).scrollTop()+10<=($("section").eq(i).offset().top)+($("section").eq(i).height())) {
-			$(".navbar a").eq(i-1).addClass("active");
+			if(i-1==3)
+				$(".navbar").hide('slow', function() {});
+			else{
+				$(".navbar a").eq(i-1).addClass("active");
+				$(".navbar").show();
+			}
 		}
 		else{
 			$(".navbar a").eq(i-1).removeClass("active");
