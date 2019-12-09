@@ -16,6 +16,7 @@ function variavel(){
 	$(".boxAparelho").css("min-height",$(".boxAparelho").width());
 	var hFirst = $(".first").height();
 	$(".opacity").height(hFirst);
+	$(".opacityBack").height($("#exemplo4").height());
 	$(".text").height(hFirst);
 	$(".navbar").height($(".navbar a").height());
 	var tangente = Math.tan(20);
@@ -28,7 +29,8 @@ function variavel(){
 	$(".faixa").css("margin-top",(($(".bannerTitle").height()/2)-($(".faixa").height()/2))+parseInt($(".bannerTitle").css("marginTop")));
 	$(".boxAparelho").css("grid-template-rows","auto "+($(".boxAparelho").width())+" auto");
 	$(".imgAparelho").width($(".imgAparelho").height());
-
+	$(".go").height($(window).height()-$("#exemplo4 .bannerTitle").height());
+	$(".go").css("background-size",$(".go").height()*0.8);
 }
 // is scroll
 function ifScroll(){
@@ -80,3 +82,7 @@ var textoArray = palavras.split('');
 			100*i);
 	});
 }
+// ----------on-click-no-go-----------
+$(".go").click(function() {
+	
+});

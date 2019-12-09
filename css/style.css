@@ -466,6 +466,35 @@ div .prop span{
 .ric{
 	background-image: url(../img/ric.png);
 }
+/*----------teste-----now-----------*/
+
+#exemplo4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image:url(../img/sala.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.opacityBack{
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	background: linear-gradient(35deg,var(--backInput),#052a47);
+	opacity: .6;
+}
+.go{
+	z-index: 1;
+	background-image: url(../img/go.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 500px;
+	
+	cursor: pointer;
+}
 /*---------------responsvidade--------------*/
 @media only screen and (max-width: 800px){
 	.tiposDePerdas{
